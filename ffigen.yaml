@@ -1,0 +1,34 @@
+name: TimezoneBindings
+description: Bindings for timezone native library
+output: 'lib/src/bindings.dart'
+preamble: |
+  // ignore_for_file: type=lint, unused_element, unused_field, camel_case_types, non_constant_identifier_names
+headers:
+  entry-points:
+    - 'src/timezone.h'
+# Bind only our exported functions and skip the system declarations that the
+# headers pull in transitively.
+functions:
+  include:
+    - 'get_local_timezone'
+    - 'get_timezone_abbreviation'
+    - 'get_utc_offset_seconds'
+    - 'free_timezone_string'
+structs:
+  exclude:
+    - '.*'
+unions:
+  exclude:
+    - '.*'
+typedefs:
+  exclude:
+    - '.*'
+enums:
+  exclude:
+    - '.*'
+macros:
+  exclude:
+    - '.*'
+globals:
+  exclude:
+    - '.*'
