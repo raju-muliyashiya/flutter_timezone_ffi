@@ -1,6 +1,6 @@
 name: flutter_timezone_ffi
 description: "A high-performance Flutter plugin to get device timezone using FFI for synchronous access."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/raju-muliyashiya/flutter_timezone_ffi
 repository: https://github.com/raju-muliyashiya/flutter_timezone_ffi
 issue_tracker: https://github.com/raju-muliyashiya/flutter_timezone_ffi/issues

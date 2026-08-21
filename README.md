@@ -11,6 +11,7 @@ Unlike platform channels that require asynchronous calls (`Future`), this packag
 - **Synchronous Execution**: No `async`/`await` overhead.
 - **Cross-Platform**: Supports Android, iOS, macOS, Windows, and Web.
 - **Native Precision**: Directly queries the underlying operating system for exact timezone information.
+- **Android 16 KB page-size ready**: The native `.so` is linked with `-Wl,-z,max-page-size=16384`, satisfying the Android 15+ / Google Play 16 KB page-size requirement.
 
 ## Getting Started
 
